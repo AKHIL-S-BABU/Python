@@ -1,3 +1,12 @@
+
+#Suresh knows binary numbers very well. Unfortunately ,he forgot his bank account password , 
+#but he remembered a number and if we reverse the binary digits of that number we will get his password.
+#Help suresh to find his password. You will be given a variable name n which is a no of passwords 
+#to find followed by n space separated numbers.You are required to give as output and passwords showing for each number.
+#For Example , if n is 3 and numbers 35000,3467,94856 , you are expected to give as output 487653376, 3517972480 and 290357248.
+
+
+
 def calc(k):
     b=0
     sum=0
