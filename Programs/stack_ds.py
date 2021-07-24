@@ -27,3 +27,54 @@ while(k!=4):
         print(arr)
     else:
         break
+
+OUTPUT
+Enter the size of the stack: 3
+
+                        Enter the Following number to do the stack operation:
+
+
+1) Push
+2) Pop
+3) Display
+4) Exit :               2
+
+                                Underflow!!
+
+1) Push
+2) Pop
+3) Display
+4) Exit :               1
+Enter the number to push :10
+
+1) Push
+2) Pop
+3) Display
+4) Exit :               1
+Enter the number to push :15
+
+1) Push
+2) Pop
+3) Display
+4) Exit :               1
+Enter the number to push :20
+
+1) Push
+2) Pop
+3) Display
+4) Exit :               3
+[10, 15, 20]
+
+1) Push
+2) Pop
+3) Display
+4) Exit :               1
+
+                        OverFlow !!!
+
+1) Push
+2) Pop
+3) Display
+4) Exit :               4
+    
+    Thank You Happy Coding!
