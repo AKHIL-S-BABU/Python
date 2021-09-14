@@ -1,0 +1,43 @@
+Consider an array with n elements and value of all the elements is zero.
+We can perform following operations on the array. 
+      1)Incremental operations:Choose 1 element from the array and increment its value by 1.
+      2)Doubling operation: Double the values of all the elements of array.
+      
+sample Input: "16 16 16"
+      Output: [8, 8, 8]     # i've added print statement on each dividing statement to better understand the code
+              1
+              [4, 4, 4]     #only the final print statement to print the count is needed
+              2
+              [2, 2, 2]
+              3
+              [0, 0, 0]
+              7
+              final count 7
+
+
+arr=list(map(int, input().split(" ")))    #instead of using " map " you could ask for the array inputs in an for loop
+c=0
+count=0
+def double(arr):
+    for i in range(len(arr)):
+        arr[i]=int(arr[i]/2)
+    return arr
+z=0
+while(z!=len(arr)):
+    for i in range(len(arr)):
+        if(arr[i]%2==1):
+            arr[i]-=1
+            count+=1
+        
+    double(arr)
+    count+=1
+    z=0
+    for i in range(len(arr)):
+        if(arr[i]%2==1):
+            arr[i]-=1
+            count+=1
+        if(arr[i]==0):
+            z=z+1
+    print(arr)
+    print(count)
+print("final count",count)
